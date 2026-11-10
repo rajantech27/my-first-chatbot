@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title shown in the browser tab -->
+    <title>My First AI Chatbot</title>
+
+    <!-- Website description -->
+    <meta
+        name="description"
+        content="A beginner-friendly AI chatbot powered by Groq."
+    >
+
+    <!-- Connect our CSS file -->
+    <link rel="stylesheet" href="/src/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Main chatbot container -->
+    <main class="chat-container">
+
+        <!-- Chatbot header -->
+        <header class="chat-header">
+
+            <h1>My First AI Chatbot</h1>
+
+            <p>Your friendly AI assistant. Ask me anything!</p>
+
+        </header>
+
+
+        <!-- Chat messages area -->
+        <section
+            class="chat-messages"
+            id="chat-messages"
+            aria-label="Chat conversation"
+            aria-live="polite"
+        >
+
+            <!-- Initial welcome message from AI -->
+            <div class="message ai-message">
+
+                Hello! Welcome to My First AI Chatbot.
+
+                I'm here to help you learn, explore ideas,
+                and answer your questions.
+
+                What would you like to know today?
+
+            </div>
+
+        </section>
+
+
+        <!-- Chat input section -->
+        <form class="chat-input-area" id="chat-form">
+
+            <!-- Text input -->
+            <input
+                type="text"
+                id="message-input"
+                placeholder="Type your message here..."
+                autocomplete="off"
+                aria-label="Your message"
+                maxlength="4000"
+                required
+            >
+
+            <!-- Send button -->
+            <button
+                type="submit"
+                id="send-button"
+            >
+                Send
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <!-- Connect our JavaScript file -->
+    <script src="/src/js/script.js" defer></script>
+
+</body>
+
+</html>
